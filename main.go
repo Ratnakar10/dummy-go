@@ -18,7 +18,7 @@ func main() {
 	if response.StatusCode == http.StatusOK {
 		bodyBytes, err := io.ReadAll(response.Body)
 		if err != nil {
-			println("error")
+			println("error.")
 		}
 		data := string(bodyBytes)
 		println(data)
